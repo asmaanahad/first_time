@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: "Login to Docker hup"
-        run: docker login --username asmaanahad --password dckr_pat_5RTLc5H5f79Dc7pp_aTku_fl72g
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
 
       
 
